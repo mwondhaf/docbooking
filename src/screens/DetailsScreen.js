@@ -47,6 +47,9 @@ export default function DetailsScreen({ route, navigation }) {
       <View />
       <View style={{ paddingHorizontal: 10 }}>
         <Text>{doctor.name}</Text>
+        <Text style={{ paddingTop: 40 }}>
+          Currently in {moment().format("MMMM")}
+        </Text>
         {/* select date  */}
         <View style={styles.datesContainer}>
           {dates.map((date) => (
